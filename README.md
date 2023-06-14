@@ -6,11 +6,7 @@
 
 ## Project Details
 
-I have created an application (for this event needs I am using .NET/Blazor) which will allow me to see instantly if person I am looking will be available soon - and if someone will be available I will show the time slots when there is possibility to reach out with option to quick message on teams/e-mail with some simple message.
-
-### Purpose
-
-Nowadays I am usually checking folks calendars and I am trying to see when they will be able to talk with me. It is usually time consuming. I just wanted to have compact overview of my week and also ability to quickly check availability of my colleges.
+For now very simple application which are showing logged-in user details in the card.
 
 ### Branching strategy
 
@@ -18,7 +14,14 @@ There is standard git flow implemented with `RELEASE` (will be created for first
 
 ### Future plans
 
-My plan after this hack is to incorporate this feature to the MS Teams in the end to actually use it on daily basis. 
+My plan after this hack is to build proper application with Azure Cognitive Services on top of it, to quicky communicate with coworkers. 
+
+### Flow
+
+There is only one tab in teams with landing page and sub-tab inside application. Here is the screen dump: 
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/KamilSiebyla/MTHT/blob/main/images/Hack_Main_Photo.png?raw=true"> 
+</p>
 
 ## Prerequisites
 
