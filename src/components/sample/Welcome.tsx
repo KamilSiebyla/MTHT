@@ -8,14 +8,10 @@ import {
   TabValue,
 } from "@fluentui/react-components";
 import "./Welcome.css";
-import { EditCode } from "./EditCode";
 import { app } from "@microsoft/teams-js";
-import { AzureFunctions } from "./AzureFunctions";
 import { Graph } from "./Graph";
-import { CurrentUser } from "./CurrentUser";
 import { useData } from "@microsoft/teamsfx-react";
-import { Deploy } from "./Deploy";
-import { Publish } from "./Publish";
+import { QuickMessage } from "./QuickMessage";
 import { TeamsFxContext } from "../Context";
 
 export function Welcome(props: { showFunction?: boolean; environment?: string }) {
@@ -59,7 +55,7 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
             <Tab id="Local" value="landing">
               Upcoming meeting for for {userName ? ", " + userName : ""}
             </Tab>
-            <Tab id="Azure" value="azure">
+            <Tab id="QuickMessage" value="quickMessage">
               Quick message to active user
             </Tab>
           </TabList>
@@ -67,12 +63,11 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
             {selectedValue === "landing" && (
               <div>
                 <Graph />
-                {showFunction && <AzureFunctions />}
               </div>
             )}
-            {selectedValue === "azure" && (
+            {selectedValue === "quickMessage" && (
               <div>
-                <Deploy />
+                <QuickMessage />
               </div>
             )}
           </div>
