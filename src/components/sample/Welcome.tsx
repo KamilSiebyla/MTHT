@@ -8,14 +8,10 @@ import {
   TabValue,
 } from "@fluentui/react-components";
 import "./Welcome.css";
-import { EditCode } from "./EditCode";
 import { app } from "@microsoft/teams-js";
-import { AzureFunctions } from "./AzureFunctions";
 import { Graph } from "./Graph";
-import { CurrentUser } from "./CurrentUser";
 import { useData } from "@microsoft/teamsfx-react";
-import { Deploy } from "./Deploy";
-import { Publish } from "./Publish";
+import { QuickMessage } from "./QuickMessage";
 import { TeamsFxContext } from "../Context";
 
 export function Welcome(props: { showFunction?: boolean; environment?: string }) {
@@ -52,39 +48,18 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
     <div className="welcome page">
       <div className="narrow page-padding">
         <Image src="hello.png" />
-        <h1 className="center">Congratulations{userName ? ", " + userName : ""}!</h1>
-        {hubName && <p className="center">Your app is running in {hubName}</p>}
-        <p className="center">Your app is running in your {friendlyEnvironmentName}</p>
+        <h1 className="center">Hello {userName ? ", " + userName : ""}!</h1>
 
         <div className="tabList">
           <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
-            <Tab id="Local" value="local">
-              1. Build your app locally
-            </Tab>
-            <Tab id="Azure" value="azure">
-              2. Provision and Deploy to the Cloud
-            </Tab>
-            <Tab id="Publish" value="publish">
-              3. Publish to Teams
+            <Tab id="Local" value="landing">
+              Personal information's
             </Tab>
           </TabList>
           <div>
-            {selectedValue === "local" && (
+            {selectedValue === "landing" && (
               <div>
-                <EditCode showFunction={showFunction} />
-                <CurrentUser userName={userName} />
                 <Graph />
-                {showFunction && <AzureFunctions />}
-              </div>
-            )}
-            {selectedValue === "azure" && (
-              <div>
-                <Deploy />
-              </div>
-            )}
-            {selectedValue === "publish" && (
-              <div>
-                <Publish />
               </div>
             )}
           </div>
