@@ -52,27 +52,20 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
     <div className="welcome page">
       <div className="narrow page-padding">
         <Image src="hello.png" />
-        <h1 className="center">Congratulations{userName ? ", " + userName : ""}!</h1>
-        {hubName && <p className="center">Your app is running in {hubName}</p>}
-        <p className="center">Your app is running in your {friendlyEnvironmentName}</p>
+        <h1 className="center">Hello {userName ? ", " + userName : ""}!</h1>
 
         <div className="tabList">
           <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
-            <Tab id="Local" value="local">
-              1. Build your app locally
+            <Tab id="Local" value="landing">
+              Upcoming meeting for for {userName ? ", " + userName : ""}
             </Tab>
             <Tab id="Azure" value="azure">
-              2. Provision and Deploy to the Cloud
-            </Tab>
-            <Tab id="Publish" value="publish">
-              3. Publish to Teams
+              Quick message to active user
             </Tab>
           </TabList>
           <div>
-            {selectedValue === "local" && (
+            {selectedValue === "landing" && (
               <div>
-                <EditCode showFunction={showFunction} />
-                <CurrentUser userName={userName} />
                 <Graph />
                 {showFunction && <AzureFunctions />}
               </div>
@@ -80,11 +73,6 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
             {selectedValue === "azure" && (
               <div>
                 <Deploy />
-              </div>
-            )}
-            {selectedValue === "publish" && (
-              <div>
-                <Publish />
               </div>
             )}
           </div>
