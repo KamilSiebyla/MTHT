@@ -25,16 +25,15 @@ My plan after this hack is to incorporate this feature to the MS Teams in the en
 👤 Kamil Siebyła
 
 [![LinkedIn][badge_linkedin]][link_linkedin]
-
-[badge_hackathon]: [https://img.shields.io/badge/Microsoft%20-Hack--Together-orange?style=for-the-badge&logo=microsoft](https://img.shields.io/badge/HackTogether-Contribution-6264A7?style=for-the-badge&logoColor=white&logo=MicrosoftTeams)
+[badge_hackathon]: https://img.shields.io/badge/Microsoft%20-Hack--Together-orange?style=for-the-badge&logo=microsoft](https://img.shields.io/badge/HackTogether-Contribution-6264A7?style=for-the-badge&logoColor=white&logo=MicrosoftTeams
 [link_hackathon]: https://github.com/microsoft/hack-together](https://github.com/microsoft/hack-together-teams
 [link_linkedin]: https://www.linkedin.com/in/kamilsiebyla
 [badge_linkedin]: https://img.shields.io/badge/LinkedIn-KamilSiebyła-blue?style=for-the-badge&logo=linkedin
 [badge_language]: https://img.shields.io/badge/language-C%23-blue?style=for-the-badge
-[badge_license]: https://img.shields.io/github/license/KamilSiebyla/MHT?style=for-the-badge
-[badge_issues]: https://img.shields.io/github/issues/KamilSiebyla/MHT?style=for-the-badge
-[badge_repo_stars]: https://img.shields.io/github/stars/KamilSiebyla/MHT?logo=github&style=for-the-badge
-[link_issues]: https://github.com/KamilSiebyla/MHT/issues
-[link_repo]: https://github.com/KamilSiebyla/MHT
-[link_actions]: https://github.com/KamilSiebyla/MHT
+[badge_license]: https://img.shields.io/github/license/KamilSiebyla/MTHT?style=for-the-badge
+[badge_issues]: https://img.shields.io/github/issues/KamilSiebyla/MTHT?style=for-the-badge
+[badge_repo_stars]: https://img.shields.io/github/stars/KamilSiebyla/MTHT?logo=github&style=for-the-badge
+[link_issues]: https://github.com/KamilSiebyla/MTHT/issues
+[link_repo]: https://github.com/KamilSiebyla/MTHT
+[link_actions]: https://github.com/KamilSiebyla/MTHT
 
