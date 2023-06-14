@@ -1,4 +1,4 @@
-import { PersonCard } from "@microsoft/mgt-react";
+import { Agenda, PersonCard } from "@microsoft/mgt-react";
 import { useContext } from "react";
 import { TeamsFxContext } from "../Context";
 

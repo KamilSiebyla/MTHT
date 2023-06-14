@@ -5,15 +5,15 @@ import { TeamsFxProvider } from "@microsoft/mgt-teamsfx-provider";
 import { PersonCardGraphToolkit } from "./PersonCardGraphToolkit";
 import { useContext } from "react";
 import { TeamsFxContext } from "../Context";
+import { Agenda } from "@microsoft/mgt-react";
 
 export function Graph() {
   const { teamsUserCredential } = useContext(TeamsFxContext);
   const { loading, error, data, reload } = useGraphWithCredential(
     async (graph, teamsUserCredential, scope) => {
-      // Call graph api directly to get user profile information
-      const profile = await graph.api("/me").get();
 
-      // Initialize Graph Toolkit TeamsFx provider
+      const profile = await graph.api("/me").get();
+      
       const provider = new TeamsFxProvider(teamsUserCredential, scope);
       Providers.globalProvider = provider;
       Providers.globalProvider.setState(ProviderState.SignedIn);
@@ -27,7 +27,7 @@ export function Graph() {
       }
       return { profile, photoUrl };
     },
-    { scope: ["User.Read"], credential: teamsUserCredential }
+    { scope: ["User.ReadWrite.All"], credential: teamsUserCredential }
   );
 
   return (

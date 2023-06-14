@@ -53,21 +53,13 @@ export function Welcome(props: { showFunction?: boolean; environment?: string })
         <div className="tabList">
           <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
             <Tab id="Local" value="landing">
-              Upcoming meeting for for {userName ? ", " + userName : ""}
-            </Tab>
-            <Tab id="QuickMessage" value="quickMessage">
-              Quick message to active user
+              Personal information's
             </Tab>
           </TabList>
           <div>
             {selectedValue === "landing" && (
               <div>
                 <Graph />
-              </div>
-            )}
-            {selectedValue === "quickMessage" && (
-              <div>
-                <QuickMessage />
               </div>
             )}
           </div>
