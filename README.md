@@ -1,7 +1,7 @@
 # MTHT - MICROSOFT HACK TOGETHER FOR MS TEAMS
 Project for Microsoft Hack Together for MS Teams.
 
-[![Hackathon][badge_hackathon]][link_hackathon]
+![HackTogether Contribution](https://img.shields.io/badge/HackTogether-Contribution-6264A7?style=for-the-badge&logoColor=white&logo=MicrosoftTeams)
 [![GitHub Issues][badge_issues]][link_issues]
 [![GitHub Stars][badge_repo_stars]][link_repo]
 [![Repo Language][badge_language]][link_repo]
@@ -25,7 +25,7 @@ My plan after this hack is to incorporate this feature to the MS Teams in the en
 👤 Kamil Siebyła
 
 [![LinkedIn][badge_linkedin]][link_linkedin]
-[badge_hackathon]: https://img.shields.io/badge/Microsoft%20-Hack--Together-orange?style=for-the-badge&logo=microsoft](https://img.shields.io/badge/HackTogether-Contribution-6264A7?style=for-the-badge&logoColor=white&logo=MicrosoftTeams
+[badge_hackathon]: 
 [link_hackathon]: https://github.com/microsoft/hack-together](https://github.com/microsoft/hack-together-teams
 [link_linkedin]: https://www.linkedin.com/in/kamilsiebyla
 [badge_linkedin]: https://img.shields.io/badge/LinkedIn-KamilSiebyła-blue?style=for-the-badge&logo=linkedin
